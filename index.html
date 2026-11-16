@@ -18,7 +18,14 @@
         .contact-box { background: #0f172a; border-radius: 8px; padding: 1rem 1.2rem; border: 1px solid #475569; display: inline-block; margin-top: 0.5rem; }
         .contact-box a { color: #38bdf8; text-decoration: none; font-weight: 600; }
         .contact-box a:hover { text-decoration: underline; }
-        footer { text-align: center; padding: 2rem; background: #0f172a; border-top: 1px solid #1e293b; color: #64748b; font-size: 0.875rem; }
+        .btn-group { display: flex; gap: 12px; margin-top: 1rem; flex-wrap: wrap; }
+        .policy-btn { display: inline-flex; align-items: center; gap: 8px; background: #0f172a; border: 1px solid #475569; color: #38bdf8; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: all 0.2s ease; }
+        .policy-btn:hover { background: #334155; border-color: #38bdf8; color: #ffffff; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(56, 189, 248, 0.2); }
+        footer { text-align: center; padding: 2.5rem 1.5rem; background: #0f172a; border-top: 1px solid #1e293b; color: #64748b; font-size: 0.875rem; }
+        .footer-nav { margin-bottom: 1rem; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+        .footer-nav a { color: #94a3b8; text-decoration: none; font-weight: 500; font-size: 0.9rem; transition: color 0.2s; }
+        .footer-nav a:hover { color: #38bdf8; text-decoration: underline; }
+        .footer-nav span { color: #475569; }
     </style>
 </head>
 <body>
@@ -32,6 +39,7 @@
             <p>Pulse Games는 몰입감 넘치는 재미와 창의적인 플레이 경험을 선사하는 모바일/크로스 플랫폼 인디 게임 개발 스튜디오입니다.</p>
             <p>현재 차기작 액션 게임을 개발 중이며, 유저 여러분께 최고의 플레이 경험을 제공하기 위해 최선을 다하고 있습니다.</p>
         </div>
+
         <div class="card">
             <h2>Contact & Support</h2>
             <p>게임 문의, 버그 제보, 비즈니스 협업 제안은 아래 공식 고객지원 이메일로 연락해 주시기 바랍니다.</p>
@@ -39,9 +47,30 @@
                 ✉️ Support: <a href="mailto:pulse.indiestudio@gmail.com">pulse.indiestudio@gmail.com</a>
             </div>
         </div>
+
+        <!-- 새로 추가된 법률 및 정책 고지 카드 (버튼 2개) -->
+        <div class="card">
+            <h2>Legal & Policies</h2>
+            <p>이용자의 권익 보호 및 안전하고 공정한 게임 환경을 위한 운영 정책 및 개인정보 처리방침입니다.</p>
+            <div class="btn-group">
+                <a href="terms.html" class="policy-btn">
+                    📄 서비스 이용약관 (Terms of Service)
+                </a>
+                <a href="privacy.html" class="policy-btn">
+                    🔒 개인정보 처리방침 (Privacy Policy)
+                </a>
+            </div>
+        </div>
     </main>
     <footer>
-        &copy; 2026 Pulse Games. All rights reserved.
+        <div class="footer-nav">
+            <a href="terms.html">서비스 이용약관</a>
+            <span>|</span>
+            <a href="privacy.html">개인정보 처리방침</a>
+            <span>|</span>
+            <a href="mailto:pulse.indiestudio@gmail.com">고객지원</a>
+        </div>
+        <p>&copy; 2026 Pulse Games. All rights reserved.</p>
     </footer>
 </body>
 </html>
